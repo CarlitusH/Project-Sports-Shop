@@ -1,0 +1,753 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --font-general:sans-serif;
+    --back-color-gen:#232b2c;
+    --back-color-footer:#414242;
+    --color-select-combo:#f1eeee;
+}
+
+body{
+    font-family: var(--font-general);
+    /* min-height: 100vh;
+    padding-bottom: 3rem;
+    position: relative; */
+}
+
+
+/*************************************************************************************************** 
+
+    Styles de Header
+
+****************************************************************************************************/
+.main-header{
+    background-color: var(--back-color-gen);
+    height: 5rem;
+    /* Fijo la barra y que baje sin desparecer */
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Menu del toogle */
+.toogle{
+    cursor: pointer;
+    display: none;
+    filter: invert(1);
+    margin-left: 1rem;
+    position: absolute;
+    /* right: 1rem; */
+    top: 1rem;
+    width: 40px;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 94rem;
+}
+
+.main-nav-link{
+    color: #ffffff;
+    max-height: 5rem;
+    text-decoration:none;
+}
+
+.main-logo{
+    background-color: #a02b2b;
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 5rem;
+    margin-right: 3rem;
+    padding-bottom: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.main-nav-item{
+    font-size: 1.1rem;
+    line-height: 5rem;
+    margin: 0 0.8rem;
+    width: max-content;
+}
+
+.input-text-search{
+    background-color: #f8f5f5;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 2.5rem;
+    margin-right: 1rem;
+    width: 45rem;
+}
+
+.container-input-icons{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+/*************************************************************************************************** 
+
+    Styles de Main
+
+****************************************************************************************************/
+
+.main-front{
+    padding: 5.6rem 1.4rem 0;
+    min-height: calc(100vh -354.56px -80px);
+}
+
+.block-cards{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100rem;
+    width: 100%;
+}
+
+.card-front{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    box-shadow: 0px 6px 0.6rem rgba(32, 30, 30, 0.2);
+    cursor: default;
+    margin: 5.4rem 1.3rem;
+    overflow: hidden;
+    text-align: center;
+    width: 50%;
+}
+
+.img-content{
+    height: 290px;
+    width: 270px;
+}
+
+
+/* Efecto cambio de cards */
+@media (hover:hover){    
+    div.card-front:hover{
+        /* transform: translateY(0.5px); */
+        transform: scale(1.2); 
+        transition: all 600ms ease;
+    }
+}
+
+
+.content-card p{
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+
+
+
+/*************************************************************************************************** 
+
+    Styles de Footer
+
+****************************************************************************************************/
+.main-footer{
+    background-color: var(--back-color-footer);
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+
+.footer-group1{
+    display: grid;
+    grid-gap: 4.1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    max-width: 96rem;
+    padding: 2.8rem 0;
+    width: 100%;
+}
+
+.footer-group1 .footer-box figure{
+    /*Centrado vertical  */
+    align-items: center;
+    display: flex;
+    height: 100%;
+    /* Centrado horizontal */
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-group1 .footer-box figure img{
+    width: 15.6rem;
+}
+
+.footer-group1 .footer-box h2{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 1.6rem;
+}
+.footer-group1 .footer-box p{
+    color: #ece6e6;
+    margin-bottom: 0.8rem;
+}
+
+.footer-group1 .footer-box .social-red a{
+    color: #ffffff;
+    display: inline-block;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    margin-right: 0.7rem;
+    text-decoration: none;
+    width: 2.4rem;
+}
+
+.footer-group1 .footer-box a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.footer-group2{
+    background-color: #485557;
+    padding: 0.9rem 06rem;
+    text-align: center;
+}
+
+.footer-group2 small{
+    color: #ffffff;
+    font-family: var(--font-general);
+    font-size: 0.9rem;
+}
+
+
+/*************************************************************************************************** 
+
+    Styles de contacto
+
+****************************************************************************************************/
+.section-form {
+    background: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+    max-width: 43rem;
+    padding: 1.5rem;
+}
+
+
+.titulos {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+.titulos span{
+    color: #a02b2b;
+}
+
+
+.form-container{
+    border-radius: 0.7rem;
+    box-shadow: 0px 6px 0.6rem rgba(32, 30, 30, 0.2);
+}
+
+
+.main-form-container p{
+    margin-top: 1rem;
+}
+
+
+.main-form-container p > input,
+.main-form-container p > textarea, 
+.main-form-container p > button{
+    background: none;
+    border: 1.5px solid transparent;
+    border-radius: 8px/8px;
+    box-shadow: 4px 2px 0.6rem #84cad6e3;
+    outline: none;
+    padding: 0.7rem;
+    width: 100%;
+}
+
+.main-form-container p > input,
+.main-form-container p > textarea,
+.main-form-container p > button {
+    margin-top: 1rem;
+}
+
+
+/* Efecto cambio color de botón*/
+@media (hover:hover){    
+    button.btn-registro:hover{
+        background: #ffffff;
+        border: 1px solid #1786b9;
+        box-shadow: 0 0.2rem #fff3f3;
+        color: #1786b9;
+        cursor: pointer;
+        transition: all 350ms ease;
+    }
+}
+
+
+.main-form-container p > button{
+    background: #1786b9;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+}
+
+
+.main-form-container{
+    margin: 0;
+    padding: 2.0rem 1.5rem;
+}
+
+/*******************************************************************************************
+
+    Style de login: pagina login.html
+
+********************************************************************************************/
+
+/* Estilos del wrapper del titulo */
+.main-tittle-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Estilos titulo h1 */
+.wrapper-titulo{
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    padding-left: 5rem;
+    text-align: right;
+    text-transform: uppercase;
+    width: 43%;
+}
+
+
+/* Contenedor del form para los registro-group  */
+.contenedor-registro{
+    background: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10.6rem;
+    margin-top: 4rem;
+    padding: 1.5rem;
+    width: 100%;   
+}
+
+
+/* Estilos de divs que agrupan el form y el registro de nuevos clientes */
+.registro-group{
+    width: 40%;
+}
+
+
+.registro-group .form-container-registro{
+    padding-top: 1.5rem;
+}
+
+.registro-group >h2{
+    /* font-family: ; */
+    font-weight: normal;
+    margin-bottom: 1.8rem;
+}
+
+/* Aplicando estilos a los input */
+.form-container-registro .titulos-registro >input{
+    border: 1px solid rgb(170, 167, 167);
+    border-radius: 3px;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+    width: 65%;
+}
+
+/* Convirtiendo a los labels en block */
+.titulos-registro>label{
+    display: block;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Resaltando el * dentro del span */
+.titulos-registro label>span{
+    color: #a02b2b;
+}
+
+
+/* Clase genérica btn */
+.btn {
+    border-radius: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1.7rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: 45%;
+}
+
+/* Estilos del botón generico de login */
+.btn-registro-outline{
+    background: #ffffff;
+    border: 1px solid #1786b9;
+    box-shadow: 0 0.2rem #fff3f3;
+    color: #1786b9;
+}
+
+
+/* Efecto cambio color para botón de login */
+@media (hover:hover){    
+    button.btn-registro-outline:hover{
+        background: #1786b9;
+        color: #ffffff;
+        transition: all 350ms ease;
+    }
+}
+
+/*************************************************************************** 
+
+    Styles de selector catálogo
+
+****************************************************************************/
+
+.container-options{
+    border: none;
+    border-style: none;
+    display: grid;
+    grid-template-columns: 15% 25% 25% 35%;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;    
+    max-width: 99rem;
+    width: 100%;
+}
+
+.wrapper-selection{
+    background: var(--color-select-combo);
+    border: 1px solid #ffffff;
+    border-bottom: 2px solid transparent;
+    width: 100%;
+}
+
+.select-item {
+    background: var(--color-select-combo);
+    border: none;
+    border-style: none;
+    cursor: grab;
+    font-weight: 600;
+    outline: none;
+    padding-bottom: 1.2rem;
+    padding-left: 2.5rem;
+    padding-top: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Efecto cambio de cards */
+@media (hover:hover){    
+    div.wrapper-selection:hover{
+        border-bottom: 2px solid #a02b2b;
+        transition: border-bottom 500ms;
+    }
+}
+
+
+/*************************************************************************** 
+
+    Styles de Registro nuevo usuario
+
+****************************************************************************/
+
+/* Estilos del contenedor principal */
+.container-register {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    padding-bottom: 2.3rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    padding-top: 4.3rem;
+}
+
+/* Estilos del título */
+.logo-register{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Wrapper de los inputs e imagen con grid */
+.wrapper-register{
+    border: 0.5px solid transparent;
+    border-radius: 20px/25px;
+    /* arriba, derecha, abajo, izquierda */
+    box-shadow: 0px 6px 0.6rem #8a7f7fe3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;   
+    margin-top: 2.5rem;
+    max-width: 75rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+/* Subtilos */
+.wrapper-register h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+/* Wrapper que envuelve el form */
+.wrapper-register-form form{
+    margin-bottom: 0;
+    margin-right: 2rem;
+    margin-top: 0;
+    margin-left: 1rem;
+    padding: 1rem;
+} 
+
+/* Wrapper que envuelve los controles de los datos personales */
+.wrapper-register-controls{
+    margin-bottom: 0;
+    margin-right: 2rem;
+    margin-top: 0;
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.wrapper-register button,
+.wrapper-register input{
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 8px/8px;
+    box-shadow: 4px 2px 0.6rem #84cad6e3;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    outline: none;
+    width: 95%;
+}
+
+.wrapper-register-form form button {
+    background: #1786b9;
+    border: 1px solid #ffffff;
+    border-radius: 20px/25px;
+    box-shadow: 0.3rem 0.3rem #f8f9fa;
+    color: #ffffff; 
+    text-transform: uppercase;
+    width: 95%;
+}
+
+
+.wrapper-register-form input,
+.wrapper-register-controls input {
+    margin-top: 1rem;
+}
+
+label>span{
+    color: #f10808;
+}
+
+
+/*************************************************************************** 
+
+    Styles responsive Para TABLET, Elementos: Header, Main y Footer
+
+****************************************************************************/
+@media only  screen and (max-width:768px) {
+    
+    /*------------------------------------------------------ 
+        Adaptaciones Responsive para el Header tablet 
+    
+    -------------------------------------------------------*/
+    .main-header{
+        background: #a02b2b;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+    .container-nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    /* Ocultar el contenido del ul con las primeras opciones */
+    .main-nav{
+        align-items: center;
+        background: #a02b2b;
+        display: flex;
+        flex-direction: column;
+        height: 22rem;
+        justify-content: space-evenly;
+        transform: translate(-100%);
+        width: 100%;
+    }
+
+    /* Esta clase servirá para mostrar el menú, utilizando el index.js*/
+    .main-nav--mostrar{
+        transform: translateY(0);
+    }
+
+    /* Mostramos el toogle con el menú hamburguesa */
+    .toogle{
+        display: inline-block;
+    }
+
+    /* En mayúsculas la letra de cada item del nav */
+    .main-nav-item {
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+
+    /* Desaparecemos el logo */
+    .main-logo{
+        display: none;
+    }
+
+    /* Cambiar el tamaño del input */
+    .main-nav-item .input-text-search {
+        margin-left: 0.7rem;
+        width: 28rem;
+    }
+
+    /* Clase para ubicar al inicio de la columna al input */
+    .container-input-icons{
+        order: -1;
+        margin-left: 4.6rem;
+    }
+
+
+    /* Efectos para las letras del menú hamburguesa */
+    .main-nav-item .main-nav-link:hover{
+        color: #000000;
+        /* font-weight: bolder; */
+        transition: all 0.7s ease;
+    }
+
+
+
+    /*----------------------------------------------------- 
+        Adaptaciones Responsive para el Main index y catálogo tablet 
+    -------------------------------------------------------*/
+    .main-front section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-section .block-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card-front{
+        width: 65%;
+    }
+    .img-content{
+        height: 330px;
+        width: 310px;
+    }
+
+
+    /* Cambios en datos de contacto */
+    .section-main{
+        margin-top:5rem;
+        max-width:30rem;
+    }
+
+    
+    /* Cambios del main Login*/
+
+    .contenedor-registro{
+        margin-top: 1rem;
+    }
+
+    .wrapper-main-login>div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* .main-tittle-wrapper{
+        display: block;
+        text-align: center;
+    } */
+    
+    .wrapper-titulo{
+
+        display: block;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .group-1,
+    .group-2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .group-1 input{
+        min-width: 25rem;
+    }
+
+
+
+
+    /* Cambios del main Registro*/
+    
+
+    /* Listas desplegables del catálogo */
+
+
+    /*----------------------------------------------------- 
+        Adaptaciones Responsive para el Footer tablet 
+    -------------------------------------------------------*/
+    .main-footer .footer-group1{
+
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 2.2rem 0;
+    }
+
+
+}
+
+
+/*************************************************************************** 
+
+    Styles responsive Para CELLPHONE, Elementos: Header, Main y Footer
+
+****************************************************************************/
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="../../../src/index.js" defer></script>
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="container-nav">
+            <a href="../../index.html" class="main-nav-link main-logo">Logo</a>
+            <div class="toogle" id="toogle">
+                <i class="fas fa-bars fa-3x"></i>
+            </div>
+            <ul id="main-nav" class="main-nav">
+                <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Hombres</a></li>
+                <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Mujeres</a></li>
+                <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Ropa</a></li>
+                <li class="main-nav-item"><a href="#" class="main-nav-link">Accesorios</a></li>
+            </ul> 
+            <div class="container-input-icons">
+                <li class="main-nav-item input-item">
+                    <input type="text" placeholder="  Buscar" class="input-text-search">
+                </li>
+                <li class="main-nav-item"><a href="../registro/login.html" class="main-nav-link"><span>
+                    <i class="fas fa-user-circle nav-icon"></i></span></a></li>
+                <li class="main-nav-item"><a href="#" class="main-nav-link"><span>
+                    <i class="fas fa-cart-arrow-down nav-icon"></i></span></a></li>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-register">
+        <h1 class="logo-register">Registro Cuenta Nueva</h1>
+        <div class="wrapper-register">
+            <div class="wrapper-register-form">
+                <h2>Información Personal</h2>
+                <form>
+                    <p>
+                        <label for="nombre">Nombres <span>*</span></label>
+                        <input type="text" id="nombre" required>
+                    </p>
+                    <p>
+                        <label for="apellidos">Apellidos <span>*</span></label>
+                        <input type="text" id="apellidos" required>
+                    </p>
+                    <p>
+                        <label for="documento">Nro Documento <span>*</span></label>
+                        <input type="text" id="documento" required>
+                    </p>
+                    <!-- <p>
+                        <label for="telefono">Teléfono *</label>
+                        <input type="text" id="telefono">
+                    </p> -->
+                    <p>
+                        <div class="paragraph-button">
+                            <button type="submit" class="btn btn-registro">  
+                                Crear Cuenta
+                            </button>
+                        </div>
+                    </p>
+                </form>
+            </div>
+            <div class="wrapper-register-sesion">
+                <h2>Información de Sesión</h2>
+
+                <div class="wrapper-register-controls">
+                    <p>
+                        <label for="email">Correo <span>*</span></label>
+                        <input type="email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="password">Contraseña <span>*</span></label>
+                        <input type="password" id="password" required>
+                    </p>
+                    <p>
+                        <label for="password-confirm">Confirmar Contraseña <span>*</span></label>
+                        <input type="password" id="password-confirm" required>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+  <footer class="main-footer">
+        <div class="footer-group1">
+            <div class="footer-box">
+                <figure>
+                    <a href="/public/index.html">
+                        <img src="" alt="Logo Empresa">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="footer-box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt, quia libero ducimus suscipit obcaecati.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt, quia libero ducimus suscipit obcaecati.</p>
+            </div>
+
+            <div class="footer-box">
+                <h2>SERVICIO AL CONSUMIDOR</h2>
+                <p><a href="../contacto/contacto.html">Contactanos</a></p>
+            </div>
+
+
+            <div class="footer-box">
+                <h2>REDES SOCIALES</h2>
+                <div class="social-red">
+                    <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href=""><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href=""><i class="fab fa-whatsapp fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-group2">
+            <small>&copy; 2022 <span>Charlie - Todos Los derechos reservados</span></small>
+        </div>
+    </footer>
+
+</body>
+</html>

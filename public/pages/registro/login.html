@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="../../../src/login.js" defer></script>
+    <script src="../../../src/index.js" defer></script>
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="container-nav">
+            <a href="../../index.html" class="main-nav-link main-logo">Logo</a>
+            <div class="toogle" id="toogle">
+                <i class="fas fa-bars fa-3x"></i>
+            </div>
+            <ul id="main-nav" class="main-nav">
+                <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Hombres</a></li>
+                <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Mujeres</a></li>
+                <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Ropa</a></li>
+                <li class="main-nav-item"><a href="#" class="main-nav-link">Accesorios</a></li>
+            </ul> 
+            <div class="container-input-icons">
+                <li class="main-nav-item input-item">
+                    <input type="text" placeholder="  Buscar" class="input-text-search">
+                </li>
+                <li class="main-nav-item"><a href="../registro/login.html" class="main-nav-link"><span>
+                    <i class="fas fa-user-circle nav-icon"></i></span></a></li>
+                <li class="main-nav-item"><a href="#" class="main-nav-link"><span>
+                    <i class="fas fa-cart-arrow-down nav-icon"></i></span></a></li>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-front">
+        <div class="wrapper-main-login">
+            <div class="main-tittle-wrapper">
+                <div class="wrapper-titulo">
+                    <h1>Inicio de sesión de Clientes</h1>
+                </div>
+                <div></div>
+            </div>
+            <div class="block-cards contenedor-registro">
+                <div class="registro-group group-1">
+                    <h2> Clientes Registrados </h2>
+                    <p>Si estás registrado puedes iniciar sesión</p>
+                    <div class="form-container-registro">
+                        <form class="main-container-registro">
+                            <div class="titulos-registro">
+                                <label for="correo">Correo <span>*</span></label>
+                                <input type="correo" class="" id="correo" required>
+                            </div>
+                            <div class="titulos-registro">
+                                <label for="password">Contraseña <span>*</span></label>
+                                <input type="password" class="" id="password" name="password" required>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-registro-outline" id="btn-sesion">Iniciar Sesión</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="registro-group group-2">
+                    <h2> Clientes Nuevos </h2>
+
+                    <p>Registrate en nuestra Web y obten muchos beneficios, como descuentos, promociones y muchos otros beneficios.. Anímate!!</p>
+                    <div>
+                        <button class="btn btn-registro-outline" id="btn-registro">Registrar Nueva Cuenta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+   <footer class="main-footer">
+        <div class="footer-group1">
+            <div class="footer-box">
+                <figure>
+                    <a href="/public/index.html">
+                        <img src="" alt="Logo Empresa">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="footer-box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt, quia libero ducimus suscipit obcaecati.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sunt, quia libero ducimus suscipit obcaecati.</p>
+            </div>
+
+            <div class="footer-box">
+                <h2>SERVICIO AL CONSUMIDOR</h2>
+                <p><a href="../contacto/contacto.html">Contactanos</a></p>
+            </div>
+
+
+            <div class="footer-box">
+                <h2>REDES SOCIALES</h2>
+                <div class="social-red">
+                    <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href=""><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href=""><i class="fab fa-whatsapp fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-group2">
+            <small>&copy; 2022 <span>Charlie - Todos Los derechos reservados</span></small>
+        </div>
+    </footer>
+
+</body>
+</html>
