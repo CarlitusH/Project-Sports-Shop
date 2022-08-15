@@ -30,9 +30,10 @@ body{
     height: 5rem;
     /* Fijo la barra y que baje sin desparecer */
     left: 0;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
+    z-index: 9999!important;
 }
 
 
@@ -110,6 +111,41 @@ body{
 .main-front{
     padding: 5.6rem 1.4rem 0;
     min-height: calc(100vh -354.56px -80px);
+}
+
+/* Estilos de carrousel bootstrap */
+
+.carousel-item{
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.7;
+    background: #171717;
+}
+
+.carousel-caption{
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5{
+    font-size: 6.3rem;
+    font-weight: 700;
+}
+
+.carousel-caption p{
+    font-size: 1.3rem;
 }
 
 .block-cards{
@@ -772,13 +808,34 @@ label>span{
         display: none;
     }
 
-    .wrapper-register-form .paragraph-button{
+    .wrapper-buttom-responsive > button{
+        display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
     }
 
-    
+    .group-2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+    }
+
+    .group-2 p{
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-registro-outline{
+        /* display: inline-block; */
+        width: 18rem;
+    }
+
+    /*  */
+    .carousel-item img{
+        min-height: 299px;
+    }
     
     /* Listas desplegables del catálogo */
 
@@ -793,8 +850,6 @@ label>span{
         gap: 20px;
         padding: 2.2rem 0;
     }
-
-
 }
 
 
@@ -804,3 +859,65 @@ label>span{
 
 ****************************************************************************/
 
+@media only  screen and (max-width:480px) {
+    /*------------------------------------------------------ 
+        Adaptaciones Responsive para el Header tablet 
+    
+    -------------------------------------------------------*/
+
+    /* Ocultar el contenido del ul con las primeras opciones */
+    .main-nav{
+        height: 20rem;
+    }
+    
+
+    /* Reducir el tamaño de la letra del menu responsive */
+    .main-nav-item {
+        font-size: 1rem;
+    }
+
+
+    /* Cambiar el tamaño del input */
+    .main-nav-item .input-text-search {
+        font-size: 1rem;
+        height: 2rem;
+        margin-left: 0.5rem;
+        outline: none;
+        width: 15rem;
+    }
+
+    /* Reducir el tamaño de los cards */
+    .block-cards{
+        max-width: 60rem;
+        width: 80%;
+    }
+
+    /* Reducir el padding del main*/
+    .main-front{
+        padding: 2.6rem 1.2rem 0;
+    }
+
+    /* Cards, reducir y adaptar elementos de Registro */
+    .card-front {
+        margin: 2rem 1.1rem;
+        width: 100%;
+    }
+    .img-content{
+        height: 220px;
+        width: 210px;
+    }
+
+    .content-card p{
+        font-size: 1rem;
+    }
+
+    .content-card h4{
+        font-size: 1.2rem;
+    }
+
+    /* Reducir el margen del contenedor de registro */
+    .contenedor-registro{
+        margin-bottom: 4rem;
+    }
+
+}
