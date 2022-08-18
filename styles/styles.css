@@ -44,7 +44,6 @@ body{
     filter: invert(1);
     margin-left: 1rem;
     position: absolute;
-    /* right: 1rem; */
     top: 1rem;
     width: 40px;
 }
@@ -486,153 +485,20 @@ body{
 
 /*************************************************************************** 
 
-    Styles de selector catálogo
+    Styles de selector catálogo: Dentro de archivo select-catalogo.css
 
 ****************************************************************************/
 
-.container-options{
-    border: none;
-    border-style: none;
-    display: grid;
-    grid-template-columns: 15% 25% 25% 35%;
-    grid-template-rows: auto;
-    margin-bottom: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;    
-    max-width: 99rem;
-    width: 100%;
-}
 
-.wrapper-selection{
-    grid-row: auto;
-    grid-column: auto;
-    background: var(--color-select-combo);
-    border: 1px solid #ffffff;
-    border-bottom: 2px solid transparent;
-    width: 100%;
-}
-
-.select-item {
-    background: var(--color-select-combo);
-    border: none;
-    border-style: none;
-    cursor: grab;
-    font-weight: 600;
-    outline: none;
-    padding-bottom: 1.2rem;
-    padding-left: 2.5rem;
-    padding-top: 1.2rem;
-    text-transform: uppercase;
-}
-
-/* Efecto cambio de cards */
-@media (hover:hover){    
-    div.wrapper-selection:hover{
-        border-bottom: 2px solid #a02b2b;
-        transition: border-bottom 500ms;
-    }
-}
 
 
 /*************************************************************************** 
 
-    Styles de Registro nuevo usuario
+    Styles de Registro nuevo usuario: Dentro de archivo select-catalogo.css
 
 ****************************************************************************/
 
-/* Estilos del contenedor principal */
-.container-register {
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-    padding-bottom: 2.3rem;
-    padding-left: 2.3rem;
-    padding-right: 2.3rem;
-    padding-top: 4.3rem;
-}
 
-/* Estilos del título */
-.logo-register{
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-/* Wrapper de los inputs e imagen con grid */
-.wrapper-register{
-    border: 0.5px solid transparent;
-    border-radius: 20px/25px;
-    /* arriba, derecha, abajo, izquierda */
-    box-shadow: 0px 6px 0.6rem #8a7f7fe3;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    margin-bottom: 2.5rem;
-    margin-left: auto;
-    margin-right: auto;   
-    margin-top: 2.5rem;
-    max-width: 75rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    width: 100%;
-}
-
-/* Subtilos */
-.wrapper-register h2{
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-
-/* Wrapper que envuelve el form */
-.wrapper-register-form form{
-    margin-bottom: 0;
-    margin-right: 2rem;
-    margin-top: 0;
-    margin-left: 1rem;
-    padding: 1rem;
-} 
-
-/* Wrapper que envuelve los controles de los datos personales */
-.wrapper-register-controls{
-    margin-bottom: 0;
-    margin-right: 2rem;
-    margin-top: 0;
-    margin-left: 1rem;
-    padding: 1rem;
-}
-
-.wrapper-register button,
-.wrapper-register input{
-    background: none;
-    border: 1px solid transparent;
-    border-radius: 8px/8px;
-    box-shadow: 4px 2px 0.6rem #84cad6e3;
-    margin-bottom: 1rem;
-    padding: 0.7rem;
-    outline: none;
-    width: 95%;
-}
-
-.wrapper-register-form form button {
-    background: #1786b9;
-    border: 1px solid #ffffff;
-    border-radius: 20px/25px;
-    box-shadow: 0.3rem 0.3rem #f8f9fa;
-    color: #ffffff; 
-    text-transform: uppercase;
-    width: 95%;
-}
-
-
-.wrapper-register-form input,
-.wrapper-register-controls input {
-    margin-top: 1rem;
-}
-
-label>span{
-    color: #f10808;
-}
 
 
 /*************************************************************************** 
@@ -790,33 +656,9 @@ label>span{
     }
 
 
-    /* Cambios del main Registro*/
-    
-    .container-register .wrapper-register{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        max-width: 46.12rem;
-    }
+    /* Inicio: Cambios del main Registro: Dentro del archivo select-catalogo.css*/
 
-    .wrapper-form{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-    }
-
-    .wrapper-form p>input{
-        width: 89%;
-    }
-
-    .wrapper-register-controls input{
-        width: 89%;
-    }
-
-    .subtitle-info{
-        display: none;
-    }
+    /* Fin: Cambios  Cambios del main Registro*/
 
     .wrapper-buttom-responsive > button{
         display: block;
