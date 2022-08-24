@@ -1,4 +1,4 @@
-/* line 1, scss/_registro.scss */
+/* line 6, scss/_registro.scss */
 .container-register {
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
@@ -6,11 +6,11 @@
   padding-left: 2.3rem;
   padding-right: 2.3rem;
   padding-top: 4.3rem; }
-  /* line 10, scss/_registro.scss */
+  /* line 15, scss/_registro.scss */
   .container-register .logo-register {
     font-size: 2.5rem;
     text-align: center; }
-  /* line 15, scss/_registro.scss */
+  /* line 20, scss/_registro.scss */
   .container-register .wrapper-register {
     border: 0.5px solid transparent;
     border-radius: 20px/25px;
@@ -27,14 +27,14 @@
     padding-bottom: 2rem;
     padding-top: 2rem;
     width: 100%; }
-    /* line 34, scss/_registro.scss */
+    /* line 39, scss/_registro.scss */
     .container-register .wrapper-register .wrapper-register-form form {
       margin-bottom: 0;
       margin-right: 2rem;
       margin-top: 0;
       margin-left: 1rem;
       padding: 1rem; }
-      /* line 41, scss/_registro.scss */
+      /* line 46, scss/_registro.scss */
       .container-register .wrapper-register .wrapper-register-form form button {
         background: #1786b9;
         border: 1px solid #ffffff;
@@ -43,7 +43,7 @@
         color: #ffffff;
         text-transform: uppercase;
         width: 95%; }
-      /* line 51, scss/_registro.scss */
+      /* line 56, scss/_registro.scss */
       .container-register .wrapper-register .wrapper-register-form form .btn-registro:hover {
         background: #ffffff;
         border: 1px solid #1786b9;
@@ -51,28 +51,30 @@
         color: #1786b9;
         cursor: pointer;
         transition: all 350ms ease; }
-    /* line 61, scss/_registro.scss */
+    /* line 66, scss/_registro.scss */
     .container-register .wrapper-register .wrapper-register-form label > span {
       color: #f10808; }
-    /* line 64, scss/_registro.scss */
+    /* line 69, scss/_registro.scss */
     .container-register .wrapper-register .wrapper-register-form input {
       margin-top: 1rem; }
-    /* line 72, scss/_registro.scss */
-    .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls {
+    /* line 75, scss/_registro.scss */
+    .container-register .wrapper-register .wrapper-register-sesion, .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls {
       margin-bottom: 0;
-      margin-right: 2rem;
-      margin-top: 0;
-      margin-left: 1rem;
-      padding: 1rem; }
-      /* line 79, scss/_registro.scss */
-      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls label > span {
-        color: #f10808; }
-      /* line 82, scss/_registro.scss */
-      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls input {
-        margin-top: 1rem; }
-    /* line 89, scss/_registro.scss */
-    .container-register .wrapper-register button,
-    .container-register .wrapper-register input {
+      margin-top: 0; }
+      /* line 78, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls {
+        margin-right: 2rem;
+        margin-left: 1rem;
+        padding: 1rem; }
+        /* line 84, scss/_registro.scss */
+        .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls label > span, .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .wrapper-register-controls label > span {
+          color: #f10808; }
+        /* line 87, scss/_registro.scss */
+        .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls input {
+          margin-top: 1rem; }
+    /* line 93, scss/_registro.scss */
+    .container-register .wrapper-register input,
+    .container-register .wrapper-register button {
       background: none;
       border: 1px solid transparent;
       border-radius: 8px/8px;
@@ -81,38 +83,38 @@
       padding: 0.7rem;
       outline: none;
       width: 95%; }
-    /* line 101, scss/_registro.scss */
+    /* line 106, scss/_registro.scss */
     .container-register .wrapper-register h2 {
       text-align: center;
       margin-bottom: 2rem;
       margin-top: 2rem; }
 
 @media only screen and (max-width: 768px) {
-  /* line 112, scss/_registro.scss */
+  /* line 117, scss/_registro.scss */
   .container-register .wrapper-register {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     max-width: 46.12rem; }
-    /* line 118, scss/_registro.scss */
+    /* line 123, scss/_registro.scss */
     .container-register .wrapper-register .wrapper-form {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
-      /* line 123, scss/_registro.scss */
+      /* line 128, scss/_registro.scss */
       .container-register .wrapper-register .wrapper-form p > input {
         width: 89%; }
-      /* line 127, scss/_registro.scss */
+      /* line 132, scss/_registro.scss */
       .container-register .wrapper-register .wrapper-form .subtitle-info {
         display: none; }
-      /* line 131, scss/_registro.scss */
+      /* line 136, scss/_registro.scss */
       .container-register .wrapper-register .wrapper-form .btn-registro {
         width: 89%; }
-    /* line 138, scss/_registro.scss */
+    /* line 143, scss/_registro.scss */
     .container-register .wrapper-register .wrapper-register-sesion .subtitle-info {
       display: none; }
-    /* line 143, scss/_registro.scss */
-    .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls p > input {
+    /* line 148, scss/_registro.scss */
+    .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls p > input, .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .wrapper-register-controls p > input {
       display: block;
       width: 89%; } }
 

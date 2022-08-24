@@ -1,0 +1,30 @@
+Se aplicaron las siguientes mejoras en los siguientes archivos .html:
+  1. index.html:
+    - Se agregó la etiqueta meta description con el contenido "Tienda especializada en la venta de calzado deportivo, casual y de seguridad."
+    - Se agregó la etiqueta meta keywords con el contenido: "Zapatillas, botines, botas, gore-tex, Waterproof, retro, hikking, running, basketball, seguridad"
+    - Se modificó la propiedad Alt de cada etiqueta img, dando una breve descripción, ejemplo: "Zapatillas deportivas retro"
+    - Se agregaró la propiedad title a cada etiqueta img, dando un título para cada imagen, ejemplo: "Jordan retro"
+    - Se modificó el texto del carousel de imágenes, al igual las etiquetas alt y title.
+    - Se cambió el contenido de la etiqueta title
+  
+  2. catalogo.html:
+    - Se agregó la etiqueta meta description con el contenido "Aquí podrás encontrar calzado para deportes como hikking, running, basketball o para trabajos en exterior, o de riesgo."
+    - Se agregó la etiqueta meta keywords con el contenido: "Zapatillas, botines, botas, gore-tex, Waterproof, retro, hikking, running, basketball, seguridad"
+    - Se modificó la propiedad Alt de cada etiqueta img, dando una breve descripción, ejemplo: "Zapatillas deportivas retro"
+    - Se agregaró la propiedad title a cada etiqueta img, dando un título para cada imagen, ejemplo: "Jordan retro"
+    - Se cambió el contenido de la etiqueta title
+  
+  3. contacto.html:
+    - Se agregó la etiqueta meta description con el contenido "Contacta con Tienda Sport GS. Tus comentarios y recomendaciones nos ayudan a mejorar."
+    - Se agregó la etiqueta meta keywords con el contenido: "Calzado, deporte, Waterproof, retro, hikking, running, basketball, seguridad"
+    - Se cambió el contenido de la etiqueta title
+
+  4. registro.html:
+    - Se agregó la etiqueta meta description con el contenido "Regístrate en la web de Tienda Sport GS y obtén beneficios, ofertas y otras promisiones en calzado deportivo, casual y de seguridad."
+    - Se agregó la etiqueta meta keywords con el contenido: "Ofertas, promociones, novedades, calzado deportivo, hikking, running, basketball, seguridad"
+    - Se cambió el contenido de la etiqueta title
+
+  5. login.html:
+    - Se agregó la etiqueta meta description con el contenido "Tienda especializada en la venta de calzado deportivo, casual y de seguridad."
+    - Se agregó la etiqueta meta keywords con el contenido: "Zapatillas, botines, botas, gore-tex, Waterproof, retro, hikking, running, basketball, seguridad"
+    - Se cambió el contenido de la etiqueta title

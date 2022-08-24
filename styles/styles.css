@@ -533,7 +533,7 @@ body{
         background: #a02b2b;
         display: flex;
         flex-direction: column;
-        height: 22rem;
+        height: 18rem;
         justify-content: space-evenly;
         transform: translate(-100%);
         width: 100%;
@@ -544,6 +544,7 @@ body{
         transform: translateY(0);
     }
 
+
     /* Mostramos el toogle con el menú hamburguesa */
     .toogle{
         display: inline-block;
@@ -551,8 +552,11 @@ body{
 
     /* En mayúsculas la letra de cada item del nav */
     .main-nav-item {
+        padding: 0;
+        margin: 0;
         font-weight: bolder;
         text-transform: uppercase;
+        
     }
 
     /* Desaparecemos el logo */
@@ -626,11 +630,7 @@ body{
         margin-right: auto;
     }
     
-    /* .main-tittle-wrapper{
-        display: block;
-        text-align: center;
-    } */
-    
+
     .wrapper-titulo{
 
         display: block;
@@ -691,6 +691,34 @@ body{
     
     /* Listas desplegables del catálogo */
 
+    #container-select{
+        display: grid;
+        max-width: 15rem;
+        text-align: center;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+    }
+
+    .container-options .wrapper-selection {
+        width: 100%;
+        /* z-index: 9999; */
+    }
+
+    .container-options .wrapper-selection #select1,  
+    .container-options .wrapper-selection #select2,  
+    .container-options .wrapper-selection #select3,  
+    .container-options .wrapper-selection #select4  {
+        text-align: center;
+        font-size: 0.7rem;
+        text-align: center;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        
+    }
+
+    .select-item option {
+        text-align: center !important;
+    }
 
     /*----------------------------------------------------- 
         Adaptaciones Responsive para el Footer tablet 
