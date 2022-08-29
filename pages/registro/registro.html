@@ -29,7 +29,7 @@
                 <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Hombres</a></li>
                 <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Mujeres</a></li>
                 <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Ropa</a></li>
-                <li class="main-nav-item"><a href="#" class="main-nav-link">Accesorios</a></li>
+                <li class="main-nav-item"><a href="../venta/catalogo.html" class="main-nav-link">Accesorios</a></li>
             </ul> 
             <div class="container-input-icons">
                 <li class="main-nav-item input-item">
@@ -43,12 +43,12 @@
         </nav>
     </header>
 
-    <main class="container-register">
-        <h1 class="logo-register">Registro Cuenta Nueva</h1>
+    <main class="container-register" id="container-register">
+        <h1 class="logo-register" id="logo-register">Registro Cuenta Nueva</h1>
         <div class="wrapper-register">
-            <div class="wrapper-register-form col-sm-12">
+            <div class="wrapper-register-form">
                 <h2 class="subtitle-info">Información Personal</h2>
-                <form class="wrapper-form">
+                <form class="wrapper-form" id="wrapper-form">
                     <p>
                         <label for="nombre">Nombres <span>*</span></label>
                         <input type="text" id="nombre" required>
@@ -62,15 +62,15 @@
                         <input type="text" id="documento" required>
                     </p>
                     <p>
-                        <div class="paragraph-button">
-                            <button type="submit" class="btn btn-registro">  
+                        <div class="paragraph-button paragr-remove">
+                            <button type="submit" class="btn btn-registro" id="btn-registro1">  
                                 Crear Cuenta
                             </button>
                         </div>
                     </p>
                 </form>
             </div>
-            <div class="wrapper-register-sesion col-sm-12">
+            <div class="wrapper-register-sesion">
                 <h2 class="subtitle-info">Información de Sesión</h2>
 
                 <div class="wrapper-register-controls">
@@ -86,6 +86,13 @@
                         <label for="password-confirm">Confirmar Contraseña <span>*</span></label>
                         <input type="password" id="password-confirm" required>
                     </p>
+                    <p>
+                        <div class="paragraph-button">
+                            <button class="btn btn-registro" id="btn-registro2">  
+                                Crear Cuenta
+                            </button>
+                        </div>
+                    </p>
                 </div>
             </div>
         </div>
@@ -96,15 +103,15 @@
             <div class="footer-box">
                 <figure>
                     <a href="../../index.html">
-                        <img src="" alt="Logo Tienda Sport GS">
+                        <img src="../../img/perfil2.jpg" alt="Logo Tienda Sport GS">
                     </a>
                 </figure>
             </div>
 
             <div class="footer-box">
                 <h2>SOBRE NOSOTROS</h2>
-                <p>Recuerda que aquí puedes revisar nuestros términos y condiciones</p>
-                <p>Si deseas unirte a nosotros, contáctanos y se parte de uno de los mejores grupos de trabajo</p>
+                <p>Recuerda que aquí puedes revisar nuestros términos y condiciones.</p>
+                <p>Si deseas unirte a nosotros, contáctanos y se parte de uno de los mejores grupos de trabajo.</p>
             </div>
 
             <div class="footer-box">

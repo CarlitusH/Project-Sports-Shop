@@ -88,8 +88,11 @@
                     margin-top: 1rem;
                 }
             }
+            #btn-registro2{
+                 display: none;
+            }
         }
-         
+          
         input,
         button{
             background: none;
@@ -119,24 +122,27 @@
             grid-template-columns: auto;
             grid-template-rows: auto;
             max-width: 46.12rem;
-        
-            .wrapper-form{
-                display: flex;
+            .wrapper-register-form{
+
+                .wrapper-form{
+                    display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
+                padding-bottom: 0;
                 
                 p>input{
                     width: 89%;
-                }
+                }  
 
                 .subtitle-info{
                     display: none;
                 }
-
+                
                 .btn-registro{
-                    width: 89%; 
+                    display: none;
                 }
             } 
+        }
 
             .wrapper-register-sesion{
                 
@@ -144,13 +150,118 @@
                     display: none;
                 }
                 .wrapper-register-controls{
-                   
+                   padding-top: 0;                   
+                    p{
+                        #documento{
+                            margin-bottom: 0;
+                        } 
+                    }
+                    
                     p>input{
                         display: block;
                         width: 89%;
+                    }
+                    
+                    
+                    .paragraph-button{
+                        #btn-registro2{
+                            background: #1786b9;
+                            border: 1px solid #ffffff;
+                            border-radius: 20px/25px;
+                            box-shadow: 0.3rem 0.3rem #f8f9fa;
+                            color: #ffffff; 
+                            display: block;
+                            margin-top: 2.5rem;
+                            text-transform: uppercase;
+                            width: 89%;
+                        }
+                        #btn-registro2:hover{
+                            background: #ffffff;
+                            border: 1px solid #1786b9;
+                            box-shadow: 0 0.2rem #fff3f3;
+                            color: #1786b9;
+                            cursor: pointer;
+                            transition: all 350ms ease;
+                        }
                     }
                 }
             } 
         } 
     }
 }
+
+@media only  screen and (max-width:480px) {
+
+    .container-register{
+        margin-top: 1.2rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-top: 2.5rem;
+    
+        #logo-register{
+            font-size: 2rem;
+        }
+        .wrapper-register{
+            .wrapper-register-form{
+                .wrapper-form{
+                    display: block;
+                    margin-right: 1rem;
+                    padding-bottom: 0;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 0.5rem;
+                    p{ 
+                        margin-left: auto;
+                        margin-right: auto; 
+                        #documento{
+                            margin-bottom: 0;
+                        }
+                        input{ 
+                            min-width: 348.53px;
+                        }
+                    }
+                    .paragraph-button{
+                        #btn-registro1{
+                            display: none;
+                        } 
+                    } 
+                }
+            }  
+            .wrapper-register-sesion{
+                .wrapper-register-controls{
+                    margin-right: 1rem;
+                    padding-bottom: 0;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    padding-top: 0.5rem;
+                    p{
+                        input{
+                            min-width: 348.53px; 
+                        }
+                    }
+                    .paragraph-button{
+                        #btn-registro2{
+                            background: #1786b9;
+                            border: 1px solid #ffffff;
+                            border-radius: 20px/25px;
+                            box-shadow: 0.3rem 0.3rem #f8f9fa;
+                            color: #ffffff; 
+                            display: block;
+                            margin-top: 2.5rem;
+                            text-transform: uppercase;
+                        }
+                        #btn-registro2:hover{
+                            background: #ffffff;
+                            border: 1px solid #1786b9;
+                            box-shadow: 0 0.2rem #fff3f3;
+                            color: #1786b9;
+                            cursor: pointer;
+                            transition: all 350ms ease;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+} 

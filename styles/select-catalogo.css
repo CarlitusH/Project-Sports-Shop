@@ -72,7 +72,10 @@
         /* line 87, scss/_registro.scss */
         .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls input {
           margin-top: 1rem; }
-    /* line 93, scss/_registro.scss */
+      /* line 91, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion #btn-registro2 {
+        display: none; }
+    /* line 96, scss/_registro.scss */
     .container-register .wrapper-register input,
     .container-register .wrapper-register button {
       background: none;
@@ -83,40 +86,126 @@
       padding: 0.7rem;
       outline: none;
       width: 95%; }
-    /* line 106, scss/_registro.scss */
+    /* line 109, scss/_registro.scss */
     .container-register .wrapper-register h2 {
       text-align: center;
       margin-bottom: 2rem;
       margin-top: 2rem; }
 
 @media only screen and (max-width: 768px) {
-  /* line 117, scss/_registro.scss */
+  /* line 120, scss/_registro.scss */
   .container-register .wrapper-register {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     max-width: 46.12rem; }
-    /* line 123, scss/_registro.scss */
-    .container-register .wrapper-register .wrapper-form {
+    /* line 127, scss/_registro.scss */
+    .container-register .wrapper-register .wrapper-register-form .wrapper-form {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; }
-      /* line 128, scss/_registro.scss */
-      .container-register .wrapper-register .wrapper-form p > input {
+      justify-content: space-evenly;
+      padding-bottom: 0; }
+      /* line 133, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-form .wrapper-form p > input {
         width: 89%; }
-      /* line 132, scss/_registro.scss */
-      .container-register .wrapper-register .wrapper-form .subtitle-info {
+      /* line 137, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-form .wrapper-form .subtitle-info {
         display: none; }
-      /* line 136, scss/_registro.scss */
-      .container-register .wrapper-register .wrapper-form .btn-registro {
-        width: 89%; }
-    /* line 143, scss/_registro.scss */
+      /* line 141, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-form .wrapper-form .btn-registro {
+        display: none; }
+    /* line 149, scss/_registro.scss */
     .container-register .wrapper-register .wrapper-register-sesion .subtitle-info {
       display: none; }
-    /* line 148, scss/_registro.scss */
-    .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls p > input, .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .wrapper-register-controls p > input {
+    /* line 152, scss/_registro.scss */
+    .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls {
+      padding-top: 0; }
+      /* line 155, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls p #documento {
+        margin-bottom: 0; }
+      /* line 160, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls p > input, .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .wrapper-register-controls p > input {
+        display: block;
+        width: 89%; }
+      /* line 167, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .paragraph-button #btn-registro2 {
+        background: #1786b9;
+        border: 1px solid #ffffff;
+        border-radius: 20px/25px;
+        box-shadow: 0.3rem 0.3rem #f8f9fa;
+        color: #ffffff;
+        display: block;
+        margin-top: 2.5rem;
+        text-transform: uppercase;
+        width: 89%; }
+      /* line 178, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .paragraph-button #btn-registro2:hover {
+        background: #ffffff;
+        border: 1px solid #1786b9;
+        box-shadow: 0 0.2rem #fff3f3;
+        color: #1786b9;
+        cursor: pointer;
+        transition: all 350ms ease; } }
+
+@media only screen and (max-width: 480px) {
+  /* line 195, scss/_registro.scss */
+  .container-register {
+    margin-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 2.5rem; }
+    /* line 201, scss/_registro.scss */
+    .container-register #logo-register {
+      font-size: 2rem; }
+    /* line 206, scss/_registro.scss */
+    .container-register .wrapper-register .wrapper-register-form .wrapper-form {
       display: block;
-      width: 89%; } }
+      margin-right: 1rem;
+      padding-bottom: 0;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.5rem; }
+      /* line 213, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-form .wrapper-form p {
+        margin-left: auto;
+        margin-right: auto; }
+        /* line 216, scss/_registro.scss */
+        .container-register .wrapper-register .wrapper-register-form .wrapper-form p #documento {
+          margin-bottom: 0; }
+        /* line 219, scss/_registro.scss */
+        .container-register .wrapper-register .wrapper-register-form .wrapper-form p input {
+          min-width: 348.53px; }
+      /* line 224, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-form .wrapper-form .paragraph-button #btn-registro1 {
+        display: none; }
+    /* line 231, scss/_registro.scss */
+    .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls {
+      margin-right: 1rem;
+      padding-bottom: 0;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.5rem; }
+      /* line 238, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls p input {
+        min-width: 348.53px; }
+      /* line 243, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .paragraph-button #btn-registro2 {
+        background: #1786b9;
+        border: 1px solid #ffffff;
+        border-radius: 20px/25px;
+        box-shadow: 0.3rem 0.3rem #f8f9fa;
+        color: #ffffff;
+        display: block;
+        margin-top: 2.5rem;
+        text-transform: uppercase; }
+      /* line 253, scss/_registro.scss */
+      .container-register .wrapper-register .wrapper-register-sesion .wrapper-register-controls .paragraph-button #btn-registro2:hover {
+        background: #ffffff;
+        border: 1px solid #1786b9;
+        box-shadow: 0 0.2rem #fff3f3;
+        color: #1786b9;
+        cursor: pointer;
+        transition: all 350ms ease; } }
 
 /* line 3, scss/estilos.scss */
 .container-options {
@@ -155,3 +244,7 @@
     .container-options .wrapper-selection:hover {
       border-bottom: 2px solid #a02b2b;
       transition: border-bottom 500ms; }
+
+/* line 44, scss/estilos.scss */
+#select5 {
+  display: none; }

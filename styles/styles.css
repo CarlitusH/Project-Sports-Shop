@@ -14,9 +14,8 @@
 
 body{
     font-family: var(--font-general);
-    /* min-height: 100vh;
-    padding-bottom: 3rem;
-    position: relative; */
+    min-width: 70rem;
+    width: 100%;
 }
 
 
@@ -84,6 +83,10 @@ body{
     line-height: 5rem;
     margin: 0 0.8rem;
     width: max-content;
+}
+
+.item-img {
+    display: none;
 }
 
 .input-text-search{
@@ -185,9 +188,8 @@ body{
 }
 
 
-
 .img-content{
-    height: 340px;
+    height: 360px;
     width: 285px;
 }
 
@@ -218,7 +220,7 @@ body{
 
 ****************************************************************************************************/
 .main-footer{
-    background-color: var(--back-color-footer);
+    background-color: var(--back-color-gen);
     bottom: 0;
     position: relative;
     width: 100%;
@@ -387,17 +389,18 @@ body{
 
 /* Estilos del wrapper del titulo */
 .main-tittle-wrapper{
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /* Estilos titulo h1 */
 .wrapper-titulo{
     font-size: 1.1rem;
     margin-top: 1.2rem;
-    padding-left: 5rem;
-    text-align: right;
+    padding-left: 0;
+    text-align: center;
     text-transform: uppercase;
     width: 43%;
 }
@@ -498,8 +501,235 @@ body{
 
 ****************************************************************************/
 
+/*************************************************************************** 
+
+    Styles responsive Para Desktop1, Elementos: Header, Main y Footer
+
+****************************************************************************/
+@media only screen and (min-width: 1137px) and (max-width: 1200px){
+    
+    body{
+        min-width: auto;
+    }
+
+    .title-adapt{
+        font-size: 1rem;
+    }
+    
+    .text-adapt{
+        font-size: 0.8rem;
+    }
+
+    .btn-outline-primary{
+        font-size: 0.7rem;
+    }
+
+    .main-header{
+        width: 100%;
+    }
+
+    .container-nav{
+        height: 5rem;
+    }
+
+    .main-nav-link{
+        margin-right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-nav{
+        margin-right: 0;
+        padding-left: 1rem;
+    }
+
+    .main-nav-item .input-text-search{
+        margin: 0 !important;
+        width: 20rem;
+    }
+
+    .main-front{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card-front{
+        width: 45%;
+        min-height: 523px;
+    }
+    .img-content{
+        height: 260px;
+        width: 180px;
+    }
+
+    .btn-adapt{
+        font-size: 0.88rem !important;
+    }
 
 
+    /* Cambiar el tamaño de letra de carousel */
+    .carousel-caption h5{
+        color: #ffffff;
+        font-size: 4.5rem;
+    }
+    
+    .carousel-caption p{
+        font-size: 1.3rem;
+    }
+
+
+    /* Listas desplegables del catálogo */
+
+    .img-fluid{
+        width: 1050px;
+    }
+
+    #container-select{
+        display: grid;
+        max-width: 65rem;
+        text-align: center;
+        grid-template-columns: auto auto auto auto;
+        /* justify-content: space-evenly; */
+    }
+    
+    .container-options .wrapper-selection {
+        width: 100%;
+    }
+    
+    .container-options .wrapper-selection #select1,  
+    .container-options .wrapper-selection #select2,  
+    .container-options .wrapper-selection #select3,  
+    .container-options .wrapper-selection #select4  {
+            text-align: center;
+            font-size: 0.7rem;
+            text-align: center;
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
+            
+    }
+
+    /* Ajuste de tamaño fuente login */
+
+}
+
+/*************************************************************************** 
+
+    Styles responsive Para Desktop2, Elementos: Header, Main y Footer
+
+****************************************************************************/
+
+@media only screen and (min-width: 1025px) and (max-width: 1136px){
+    
+    
+    .title-adapt{
+        font-size: 1rem;
+    }
+    
+    .text-adapt{
+        font-size: 0.7rem;
+    }
+
+    .btn-outline-primary{
+        font-size: 0.7rem;
+    }
+
+    .main-header{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .container-nav{
+        justify-content: flex-start;
+        height: 5rem;
+        width: 92%;
+    }
+
+    .main-nav-link{
+        margin-right: 0;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+
+    .main-nav{
+        margin-right: 0;
+        padding-left: 1rem;
+    }
+
+    .main-logo{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-nav-item .input-text-search{
+        margin: 0 !important;
+        width: 22rem;
+    }
+
+    .main-front{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card-front{
+        width: 45%;
+        min-height: 523px;
+    }
+    .img-content{
+        height: 260px;
+        width: 180px;
+    }
+
+    .btn-adapt{
+        font-size: 0.8rem !important;
+    }
+
+    /* Cambiar el tamaño de letra de carousel */
+    .carousel-caption h5{
+        color: #ffffff;
+        font-size: 4.5rem;
+    }
+        
+    .carousel-caption p{
+        font-size: 1.3rem;
+    }
+
+    .main-footer .footer-group1{
+
+        width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+        padding: 2.2rem 0;
+    }
+
+    .img-fluid{
+        width: 1025px;
+    }
+
+    #container-select{
+        display: grid;
+        max-width: 65rem;
+        text-align: center;
+        grid-template-columns: auto auto auto auto;
+        /* justify-content: space-evenly; */
+    }
+    
+    .container-options .wrapper-selection {
+        width: 100%;
+    }
+    
+    .container-options .wrapper-selection #select1,  
+    .container-options .wrapper-selection #select2,  
+    .container-options .wrapper-selection #select3,  
+    .container-options .wrapper-selection #select4  {
+            text-align: center;
+            font-size: 0.7rem;
+            text-align: center;
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
+            
+    }
+
+}
 
 /*************************************************************************** 
 
@@ -508,12 +738,29 @@ body{
 ****************************************************************************/
 @media only  screen and (max-width:768px) {
     
+    body{
+        min-width: auto;
+        width: 100%;
+    }
+    
+    
+    /* Cambiar el tamaño de letra de carousel */
+    .carousel-caption h5{
+        color: #ffffff;
+        font-size: 3rem;
+    }
+            
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+    
     /*------------------------------------------------------ 
         Adaptaciones Responsive para el Header tablet 
     
     -------------------------------------------------------*/
     .main-header{
         background: #a02b2b;
+        display: block;
         margin-left: auto;
         margin-right: auto;
        
@@ -527,21 +774,33 @@ body{
         margin-top: 0;
     }
 
-    /* Ocultar el contenido del ul con las primeras opciones */
-    .main-nav{
-        align-items: center;
-        background: #a02b2b;
-        display: flex;
-        flex-direction: column;
-        height: 18rem;
-        justify-content: space-evenly;
-        transform: translate(-100%);
-        width: 100%;
+    /* Cambiar el tamaño de letra de carousel */
+    .carousel-caption h5{
+        color: #ffffff;
+        font-size: 2.5rem;
     }
 
+    .carousel-caption p{
+        font-size: 1rem;
+    }
+
+    /* Ocultar el contenido del ul con las primeras opciones */
+    .main-nav{
+        background: #a02b2b;
+        display: none;
+        height: 20rem;
+        margin-right: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+    
     /* Esta clase servirá para mostrar el menú, utilizando el index.js*/
     .main-nav--mostrar{
-        transform: translateY(0);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
     }
 
 
@@ -550,14 +809,19 @@ body{
         display: inline-block;
     }
 
+
+
     /* En mayúsculas la letra de cada item del nav */
     .main-nav-item {
-        padding: 0;
-        margin: 0;
+        font-size: 1.3rem;
         font-weight: bolder;
+        height: 55px;
+        margin: 0;
+        padding: 0;
         text-transform: uppercase;
-        
     }
+
+
 
     /* Desaparecemos el logo */
     .main-logo{
@@ -566,14 +830,15 @@ body{
 
     /* Cambiar el tamaño del input */
     .main-nav-item .input-text-search {
-        margin-left: 0.7rem;
-        width: 28rem;
+        /* margin-left: 0.7rem; */
+        outline: none;
+        width: 22rem;
     }
 
     /* Clase para ubicar al inicio de la columna al input */
     .container-input-icons{
         order: -1;
-        margin-left: 4.6rem;
+        margin-left: 4.0rem;
     }
 
 
@@ -605,7 +870,7 @@ body{
     }
     .img-content{
         height: 370px;
-        width: 250px;
+        width: 220px;
     }
 
 
@@ -632,7 +897,6 @@ body{
     
 
     .wrapper-titulo{
-
         display: block;
         padding: 0;
         text-align: center;
@@ -656,9 +920,6 @@ body{
     }
 
 
-    /* Inicio: Cambios del main Registro: Dentro del archivo select-catalogo.css*/
-
-    /* Fin: Cambios  Cambios del main Registro*/
 
     .wrapper-buttom-responsive > button{
         display: block;
@@ -680,11 +941,10 @@ body{
     }
 
     .btn-registro-outline{
-        /* display: inline-block; */
         width: 18rem;
     }
 
-    /*  */
+    /* imagenes carrousel */
     .carousel-item img{
         min-height: 299px;
     }
@@ -693,7 +953,7 @@ body{
 
     #container-select{
         display: grid;
-        max-width: 15rem;
+        max-width: 20rem;
         text-align: center;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
@@ -701,7 +961,6 @@ body{
 
     .container-options .wrapper-selection {
         width: 100%;
-        /* z-index: 9999; */
     }
 
     .container-options .wrapper-selection #select1,  
@@ -744,16 +1003,18 @@ body{
         Adaptaciones Responsive para el Header tablet 
     
     -------------------------------------------------------*/
-
+    body{
+        min-width: auto;
+    }
     /* Ocultar el contenido del ul con las primeras opciones */
     .main-nav{
-        height: 20rem;
+        height: 18rem;
     }
     
 
     /* Reducir el tamaño de la letra del menu responsive */
     .main-nav-item {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
 
@@ -771,7 +1032,7 @@ body{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 60rem;
+        max-width: 45rem;
         width: 80%;
     }
 
@@ -807,4 +1068,28 @@ body{
         margin-bottom: 4rem;
     }
 
+    /* Ajustanto titulo contacto */
+    .section-form{
+        margin-top: 3rem;
+    }
+
+    /* Ajustar select */
+
+    .container-options .wrapper-selection #select1,  
+    .container-options .wrapper-selection #select2,  
+    .container-options .wrapper-selection #select3,  
+    .container-options .wrapper-selection #select4  {
+        display: none;
+    }
+
+    #container-select #select5 {
+        display: block;
+        text-align: center;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 4.3rem;
+        padding-right: 4.3rem;
+    }
 }
