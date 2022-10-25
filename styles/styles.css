@@ -377,6 +377,7 @@ body{
 }
 
 
+
 .main-form-container{
     margin: 0;
     padding: 2.0rem 1.5rem;
@@ -418,6 +419,15 @@ body{
     width: 100%;   
 }
 
+.contenedor-registro2{
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10.6rem;
+    margin-top: 4rem;
+    padding: 1.5rem;
+    width: 100%;   
+}
 
 /* Estilos de divs que agrupan el form y el registro de nuevos clientes */
 .registro-group{

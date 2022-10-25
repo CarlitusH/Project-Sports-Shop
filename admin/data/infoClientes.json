@@ -1,0 +1,132 @@
+[
+    {
+        "id":321,
+        "nombre":"Miguel",
+        "paterno":"Perez",
+        "materno":"Rojas",
+        "email":"mperezr@mail.com",
+        "nacimiento": {
+            "anio":1995,
+            "mes":11,
+            "dia":12
+        },
+        "estado":true
+    },
+    {
+        "id":312,
+        "nombre":"Carlos",
+        "paterno":"Sanchez",
+        "materno":"Rivas",
+        "email":"csanchezr@mail.com",
+        "nacimiento": {
+            "anio":1991,
+            "mes":9,
+            "dia":22
+        },
+        "estado":true
+    },
+    {
+        "id":322,
+        "nombre":"Juan",
+        "paterno":"Luna",
+        "materno":"Galvez",
+        "email":"jlunag@mail.com",
+        "nacimiento": {
+            "anio":1990,
+            "mes":10,
+            "dia":15
+        },
+        "estado":true
+    },
+    {
+        "id":332,
+        "nombre":"Diego",
+        "paterno":"Fernandez",
+        "materno":"Vela",
+        "email":"dfernandezv@mail.com",
+        "nacimiento": {
+            "anio":1989,
+            "mes":2,
+            "dia":25
+        },
+        "estado":true
+    },
+    {
+        "id":351,
+        "nombre":"Daniel",
+        "paterno":"Murga",
+        "materno":"Zegarra",
+        "email":"dmurgaz@mail.com",
+        "nacimiento": {
+            "anio":1992,
+            "mes":7,
+            "dia":3
+        },
+        "estado":true
+    },
+    {
+        "id":343,
+        "nombre":"César",
+        "paterno":"Nizama",
+        "materno":"Hurtado",
+        "email":"cnizamah@mail.com",
+        "nacimiento": {
+            "anio":1999,
+            "mes":5,
+            "dia":21
+        },
+        "estado":true
+    },
+    {
+        "id":362,
+        "nombre":"Jorge",
+        "paterno":"Cáceres",
+        "materno":"Lecca",
+        "email":"jcaceresl@mail.com",
+        "nacimiento": {
+            "anio":1989,
+            "mes":3,
+            "dia":23
+        },
+        "estado":true
+    },
+    {
+        "id":336,
+        "nombre":"Carlos",
+        "paterno":"Rubio",
+        "materno":"Prieto",
+        "email":"crubiop@mail.com",
+        "nacimiento": {
+            "anio":1982,
+            "mes":9,
+            "dia":18
+        },
+        "estado":true
+    },
+    {
+        "id":376,
+        "nombre":"Augusto",
+        "paterno":"Morelli",
+        "materno":"Miranda",
+        "email":"amorellim@mail.com",
+        "nacimiento": {
+            "anio":1979,
+            "mes":6,
+            "dia":14
+        },
+        "estado":true
+    },
+    {
+        "id":381,
+        "nombre":"Angel",
+        "paterno":"García",
+        "materno":"García",
+        "email":"agarciaa@mail.com",
+        "nacimiento": {
+            "anio":1980,
+            "mes":11,
+            "dia":23
+        },
+        "estado":true
+    }
+]

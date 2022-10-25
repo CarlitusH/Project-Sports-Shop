@@ -8,9 +8,9 @@
     <meta name="keywords" content="Calzado, deporte, Waterproof, retro, hikking, running, basketball, seguridad">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Sport GS - Listado Clientes</title>
-    <script src="../../src/index.js" defer></script>
-    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>Tienda Sport GS - Actualizar Cliente</title>
+    <script src="../src/index.js" defer></script>
+    <link rel="stylesheet" href="../styles/styles.css">
     <!-- BootStrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -19,17 +19,16 @@
         crossorigin="anonymous"></script>
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
 </head>
 
 <body>
 
-
     <header class="main-header">
         <nav class="container-nav">
             <div class="main-nav-link main-logo">
-                <a href="../../index.html">
-                    <img src="../../img/Gloria negativo.jpg" alt="Logo Tienda Sport GS">
+                <a href="../index.html">
+                    <img src="../img/Gloria negativo.jpg" alt="Logo Tienda Sport GS">
                 </a>
             </div>
             <div class="toogle" id="toogle">
@@ -39,8 +38,7 @@
                 <li class="main-nav-item"><a href="../pages/venta/catalogo.html" class="main-nav-link">Hombres</a></li>
                 <li class="main-nav-item"><a href="../pages/venta/catalogo.html" class="main-nav-link">Mujeres</a></li>
                 <li class="main-nav-item"><a href="../pages/venta/catalogo.html" class="main-nav-link">Ropa</a></li>
-                <li class="main-nav-item"><a href="./listadoProductos.html" class="main-nav-link">Productos</a>
-                </li>
+                <li class="main-nav-item"><a href="./listadoClientes.html" class="main-nav-link">Clientes</a></li>
             </ul>
             <div class="container-input-icons">
                 <li class="main-nav-item input-item">
@@ -54,39 +52,67 @@
         </nav>
     </header>
 
-    <main style="margin-bottom: 12rem; margin-top:6rem; margin-left:3rem; margin-right: 3rem;">
-        <h1 class="titulos" style="margin-bottom: 6rem;">Clientes registrados en <span>GS-Sport</span></h1>
-        
-        <div class="input-group mb-3" style="margin-bottom: 1.5rem;">
-            <button class="btn btn-outline-danger" type="button" id="btnFiltroNombre" style="padding-left: 5rem; padding-right: 5rem;">Filtrar</button>
-            <input type="text" class="form-control" placeholder="Nombre Cliente" aria-label="Username" id="txtFiltroNombre">
-        </div>
-        
-        <table class="table">
-            <thead>
-                <tr class="table-danger">
-                    <th scope="col">Id Cliente</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Apellido Paterno</th>
-                    <th scope="col">Apellido Materno</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col">Fecha Nacimiento</th>
-                    <th scope="col">Actualizar Cliente <i class="fas fa-user-edit"></i> </th>
-                    <th scope="col">Borrar Cliente <i class="fas fa-user-slash"></i></th>
-                </tr>
-            </thead>
-            <tbody id="cuerpo-tabla">
-            </tbody>
-        </table>
+    <main>
+        <section class="section-form" style="margin-top: 1rem;">
+            <h1 class="titulos">Modificar Datos de <span>Cliente</span></h1>
+            <div class="form-container">
+                <form class="main-form-container" id="form-submit-contacto">
+
+
+                    <input type="hidden" id="txtId">
+
+                    <p>
+                        <label for="nombre" style="font-weight:bolder;">Nombres*</label>
+                        <input type="text" class="" id="nombre" required>
+                    </p>
+                    <p>
+                        <label for="paterno" style="font-weight:bolder;">Apellido Paterno*</label>
+                        <input type="text" class="" id="paterno" name="paterno" required>
+                    </p>
+                    <p>
+                        <label for="materno" style="font-weight:bolder;">Apellido Materno*</label>
+                        <input type="text" class="" id="materno" name="materno" required>
+                    </p>
+                    <p>
+                        <label for="email" style="font-weight:bolder;">Correo*</label>
+                        <input type="email" class="" id="email" required>
+                    </p>
+                    <p>
+                        <label for="nacimiento" style="font-weight:bolder;">Fecha Nacimiento*</label>
+                        <input type="date" class="" id="nacimiento" placeholder="Fecha Nacimiento" required>
+                    </p>
+
+                    <p class="form-check">
+                        <div style="margin-bottom: 1rem;">
+                            <label style="font-weight:bolder;">Estado*</label>
+                        </div>
+                        <input type="radio" class="form-check-input" id="estado-activo" name="estado" required>
+                        <label for="estado-activo" class="form-check-label">Activo</label>
+                        <input type="radio" class="form-check-input" id="estado-inactivo" name="estado" required>
+                        <label for="estado-inactivo" class="form-check-label">Inactivo</label>
+                    </p>
+                    <div id="mensaje-error">
+                            
+                    </div>
+
+                    <p style="margin-top: 2rem;">
+                        <button type="submit" class="btn-registro" id="btnActualizarCliente">Actualizar Datos</button>
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="./listadoClientes.html" class="btn btn-outline-danger btn-md" role="button"  id="btnCancelar">Cancelar Operación</a>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+
 
     <footer class="main-footer">
         <div class="footer-group1">
             <div class="footer-box">
                 <figure>
                     <a href="../index.html">
-                        <img src="../../img/perfil2.jpg" alt="Logo Tienda Sport GS">
+                        <img src="../img/perfil2.jpg" alt="Logo Tienda Sport GS">
                     </a>
                 </figure>
             </div>
@@ -119,8 +145,6 @@
             <small>&copy; 2022 <span>GS Sport - Todos Los derechos reservados</span></small>
         </div>
     </footer>
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../src/listadoClientes.js" type="module"></script>
 </body>
 

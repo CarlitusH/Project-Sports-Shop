@@ -1,0 +1,32 @@
+[
+    {
+        "usuario":"msilva",
+        "nombre":"Marco",
+        "paterno":"Silva",
+        "materno":"Noriega",
+        "correo":"msilvan@mail.com",
+        "estado":true,
+        "password":"123456",
+        "perfil":1
+    },
+    {
+        "usuario":"lpalaciosj",
+        "nombre":"Luis",
+        "paterno":"Palacios",
+        "materno":"Jimenez",
+        "correo":"lpalaciosj@mail.com",
+        "estado":true,
+        "password":"123456",
+        "perfil":1
+    },
+    {
+        "usuario":"psaavedras",
+        "nombre":"Pedro",
+        "paterno":"Saavedra",
+        "materno":"Segura",
+        "correo":"psaavedras@mail.com",
+        "estado":true,
+        "password":"123456",
+        "perfil":2
+    }
+]

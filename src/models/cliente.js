@@ -93,6 +93,6 @@ export class Cliente {
     }
 
     toString(){
-        return `ID: ${this.idCliente} - NOMBRE: ${this.nombresCliente} - APELLIDO PATERNO: ${this.apellidoPaternoCliente} - APELLIDO MATERNO: ${this.apellidoMaternoCliente} - CORREO: ${this.correoCliente} - ESTADO: ${this.estadoRegistroCliente?"Activo":"Inactivo"} - FECHA NACIMIENTO: ${this.formatearFecha(this.fechaNacimientoCliente)}`;
+        return `ID: ${this.idCliente} - NOMBRE: ${this.nombresCliente} - APELLIDO PATERNO: ${this.apellidoPaternoCliente} - APELLIDO MATERNO: ${this.apellidoMaternoCliente} - CORREO: ${this.correoCliente} - ESTADO: ${this.estadoRegistroCliente?"Activo":"Inactivo"} - FECHA NACIMIENTO: ${formatearFecha(this.fechaNacimientoCliente)}`;
     }
 }
