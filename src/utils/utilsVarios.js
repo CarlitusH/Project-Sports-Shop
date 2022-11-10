@@ -3,11 +3,11 @@
 ******************************************************************************************/
 export const dataCategoriaProductos = ()=>{
     const mapaCategoria = new Map();
-    mapaCategoria.set(1, "Vestimenta");
-    mapaCategoria.set(2, "Calzado Trekking");
-    mapaCategoria.set(3, "Zapatillas Urbanas");
     mapaCategoria.set(4, "Accesorios");
     mapaCategoria.set(5, "Calzado Casual");
+    mapaCategoria.set(2, "Calzado Trekking");
+    mapaCategoria.set(1, "Vestimenta");
+    mapaCategoria.set(3, "Zapatillas Urbanas");
     return mapaCategoria;
 }
 
@@ -60,6 +60,10 @@ export const validarDatosInput = (objDataInput)=>{
         }else if(objDataInput[key].tipo === "correo"){
             rpta = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(objDataInput[key].valor)
                    ?true:`El campo ${key} No cumple con el formato de correo, ejemplo: cuenta@mail.com`;
+        }else if(objDataInput[key].tipo === "decimal2"){
+            rpta = /^[0-9]{1,4}\.[0-9]{1,2}$/.test(objDataInput[key].valor)?true:`El campo ${key} debe contener Números Enteros y dos DECIMALES`;
+        }else if(objDataInput[key].tipo === "alfanumerico"){
+            rpta = objDataInput[key].valor.length>3?true:`El campo ${key} debe tener una longitud mayor a 3 caracteres`;
         }
 
         if(rpta!==true){

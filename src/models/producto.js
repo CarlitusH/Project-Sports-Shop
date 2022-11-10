@@ -1,6 +1,6 @@
 export class Producto {
 
-    constructor(id, nombre, descripcion, precioUnitario, categoria, precioFinal, descuento=0){
+    constructor(id, nombre, descripcion, precioUnitario, categoria, precioFinal, imagen ,descuento=0){
         this.idProducto = id; 
         this.nombreProducto = nombre;
         this.descripcionProducto = descripcion;
@@ -8,6 +8,7 @@ export class Producto {
         this.descuentoProducto =  descuento;
         this.categoriaProducto = categoria;
         this.precioFinalProducto = precioFinal;
+        this.imagenProducto = imagen;
     }
 
     get getIdProducto(){
@@ -36,6 +37,11 @@ export class Producto {
 
     get getPrecioFinalProducto(){
         return this.precioFinalProducto;
+    }
+
+
+    get getImagenProducto(){
+        return this.imagenProducto;
     }
 
     //Setters
@@ -81,6 +87,14 @@ export class Producto {
      */
     set setPrecioFinalProducto(precioFinal){
         this.precioFinalProducto = precioFinal;
+    }
+
+    
+    /**
+     * @param {String} imagen
+     */
+    set setImagenProducto(imagen){
+        this.imagenProducto = imagen;
     }
 
     /** 

@@ -1,0 +1,183 @@
+[
+    {
+        "id":123,
+        "nombre":"Columbia Vitesse Mid",
+        "descripcion":"Calzado de aventura gore-tex gris/rojo",
+        "unitario":710.15,
+        "categoria":"2",
+        "final":0,
+        "imagen":"columbia-vitesse.jpg",
+        "descuento":3
+    },
+    {
+        "id":124,
+        "nombre":"Casaca Térmica",
+        "descripcion":"Cazaca Columbia Omni-Heat",
+        "unitario":963.25,
+        "categoria":"1",
+        "final":0,
+        "imagen":"",
+        "descuento":6
+    },
+    {
+        "id":125,
+        "nombre":"Zapatilla Merrell",
+        "descripcion":"Calzado trekking merrell, planta vibrom",
+        "unitario":628.50,
+        "categoria":"2",
+        "final":0,
+        "imagen":"",
+        "descuento":5
+    },
+    {
+        "id":126,
+        "nombre":"Botines Mammut",
+        "descripcion":"Calzado de aventura gore-tex azul",
+        "unitario":880.18,
+        "categoria":"2",
+        "final":0,
+        "imagen":"",
+        "descuento":6
+    },
+    {
+        "id":127,
+        "nombre":"Nike Air force 1 Iridescent",
+        "descripcion":"Nike Air Force I planta multicolor, Blanca",
+        "unitario":827.50,
+        "categoria":"3",
+        "final":0,
+        "imagen":"nike-airoforce1-woman.jpg",
+        "descuento":5
+    },
+    {
+        "id":128,
+        "nombre":"Mochila Mammut",
+        "descripcion":"Mochila Impermeable negra",
+        "unitario":450.82,
+        "categoria":"4",
+        "final":0,
+        "imagen":"",
+        "descuento":3
+    },
+    {
+        "id":129,
+        "nombre":"Timberland Radford 6",
+        "descripcion":"Calzado Casual verde",
+        "unitario":799.34,
+        "categoria":"5",
+        "final":0,
+        "imagen":"timberland-verde-A10z.jpg",
+        "descuento":5
+    },
+    {
+        "id":130,
+        "nombre":"Botines Caterpillar",
+        "descripcion":"Calzado casual amarillo",
+        "unitario":660.50,
+        "categoria":"5",
+        "final":0,
+        "imagen":"",
+        "descuento":4
+    },
+    {
+        "id":131,
+        "nombre":"Botines Caterpillar Excavator",
+        "descripcion":"Calzado de seguridad gris/amarillo",
+        "unitario":875.50,
+        "categoria":"5",
+        "final":0,
+        "imagen":"",
+        "descuento":4
+    },
+    {
+        "id":132,
+        "nombre":"Zapatilla Air Jordan Retro 3",
+        "descripcion":"Calzado casual retro blanco/rojo",
+        "unitario":965.48,
+        "categoria":"3",
+        "final":0,
+        "imagen":"jorda-retro3-white.jpg",
+        "descuento":6
+    },
+    {
+        "id":133,
+        "nombre":"Zapatilla Air Jordan Retro 8",
+        "descripcion":"Calzado casual retro negro/morado",
+        "unitario":1050.50,
+        "categoria":"3",
+        "final":0,
+        "imagen":"jordar-retro8.jpg",
+        "descuento":7
+    },
+    {
+        "id":134,
+        "nombre":"Zapatilla Air Jordan Retro 1",
+        "descripcion":"Calzado casual retro rojo/blanco/negro",
+        "unitario":950.50,
+        "categoria":"3",
+        "final":0,
+        "imagen":"jordan-chicago-retro1.jpg",
+        "descuento":4
+    },
+    {
+        "id":135,
+        "nombre":"Columbia Trailstorm Mid",
+        "descripcion":"Calzado de aventura gore-tex gris/verde claro",
+        "unitario":733.22,
+        "categoria":"2",
+        "final":0,
+        "imagen":"columbia-trailstorm.jpg",
+        "descuento":3
+    },
+    {
+        "id":136,
+        "nombre":"Columbia Hatana Max",
+        "descripcion":"Calzado de aventura outDry gris/blanco",
+        "unitario":540.50,
+        "categoria":"2",
+        "final":0,
+        "imagen":"columbia-hatana.jpg",
+        "descuento":2
+    },
+    {
+        "id":137,
+        "nombre":"Columbia Flow Borough",
+        "descripcion":"Calzado de aventura outDry multicolor",
+        "unitario":540.50,
+        "categoria":"2",
+        "final":0,
+        "imagen":"columbia-flow-borough.jpg",
+        "descuento":2
+    },
+    {
+        "id":138,
+        "nombre":"Timberland Lincoln Peek",
+        "descripcion":"Calzado Casual y de aventura waterproof gris/negro",
+        "unitario":755.34,
+        "categoria":"2",
+        "final":0,
+        "imagen":"timberland-2.jpg",
+        "descuento":3
+    },
+    {
+        "id":139,
+        "nombre":"Timberland Lincoln Peek GS",
+        "descripcion":"Calzado Casual y de aventura waterproof amarillo/negro",
+        "unitario":760.34,
+        "categoria":"2",
+        "final":0,
+        "imagen":"timberland-lincoln-peek1.jpg",
+        "descuento":3
+    },
+    {
+        "id":140,
+        "nombre":"Timberland Euro Hiker",
+        "descripcion":"Calzado Casual amarillo/negro",
+        "unitario":680.23,
+        "categoria":"5",
+        "final":0,
+        "imagen":"timberland-euro-hiker-reimagined.jpg",
+        "descuento":3
+    }
+    
+]

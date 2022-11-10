@@ -44,10 +44,38 @@
                 </li>
                 <li class="main-nav-item"><a href="../registro/login.html" class="main-nav-link"><span>
                     <i class="fas fa-user-circle nav-icon"></i></span></a></li>
-                <li class="main-nav-item"><a href="#" class="main-nav-link"><span>
-                    <i class="fas fa-cart-arrow-down nav-icon"></i></span></a></li>
+                <li class="main-nav-item">
+                    <a href="#" class="main-nav-link" id="carritoModal" data-bs-toggle="modal" data-bs-target="#modalShopCart">
+                        <span>
+                            <i class="fas fa-cart-arrow-down nav-icon">
+                               <span id="cantidadCarrito"></span>
+                            </i>
+                        </span>
+                    </a>
+                </li>
             </div>
         </nav>
+        
+        <!-- Modal Carrito de compras-->
+        <div class="modal fade" id="modalShopCart" tabindex="-1" aria-labelledby="modalShopCartLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalShopCartLabel">Detalle Carrito Compra</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-outline-danger" id="btnBorrarCarrito">Vacíar Carrito</button>
+                  <button type="button" class="btn btn-outline-success" id="btnIrResumenCarrito">Ver Resumen Compra</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
     </header>
 
     <main class="main-front">
@@ -125,7 +153,7 @@
                         <div class="card-body">
                             <h5 class="card-title title-adapt">Jordan Retro 3</h5>
                             <p class="card-text text-adapt">Air Jordan retro 3 Blancascuero fueron lanzadas en 1988. Diseñadas personalmente por Tinker Hatfield.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <a href="#" class="btn btn-outline-primary btn-adapt" onclick="agregarProducto(event, 123)">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front">
@@ -133,7 +161,7 @@
                         <div class="card-body">
                             <h5 class="card-title title-adapt">Jordan Retro 8</h5>
                             <p class="card-text text-adapt">Air Jordan retro 8 Black/Bright Concord. Diseño personalizado con el que Michael Jordan ganó su 3er campeonato en la NBA.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <a href="#" class="btn btn-outline-primary btn-adapt" onclick="agregarProducto(event, 124)">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front">
@@ -141,15 +169,15 @@
                         <div class="card-body">
                             <h5 class="card-title title-adapt">Nike Air force 1 Iridescent</h5>
                             <p class="card-text text-adapt">Air force 1 una de las zapatillas más emblemáticas. Cuenta con revestimientos con costuras duraderas.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front" >
                         <img src="../../img/jordan-chicago-retro1.jpg" class="card-img-top img-content" alt="Zapatillas deportivas retro" title="Jordan retro 1">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Jordan Retro 1</h5>
-                          <p class="card-text text-adapt">Air jordan chicago retro 1 White/Vasity Red-Black. Lanzadas en 1985, modelo más emblemático de jordan.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Jordan Retro 1</h5>
+                            <p class="card-text text-adapt">Air jordan chicago retro 1 White/Vasity Red-Black. Lanzadas en 1985, modelo más emblemático de jordan.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                 </div>
@@ -160,33 +188,33 @@
                     <div data-aos="fade-up" class="card card-front">
                         <img src="../../img/columbia-trailstorm.jpg" class="card-img-top img-content" alt="Calzado trekking impermeable" title="columbia trailstrom">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Columbia Trailstorm Mid</h5>
-                          <p class="card-text text-adapt">La punta y el empeine impermeable, y transpirable te mantienen seco en cualquier clima, ideal para climas impredecibles.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Columbia Trailstorm Mid</h5>
+                            <p class="card-text text-adapt">La punta y el empeine impermeable, y transpirable te mantienen seco en cualquier clima, ideal para climas impredecibles.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front">
                         <img src="../../img/columbia-vitesse.jpg" class="card-img-top img-content" alt="Calzado trekking impermeable" title="columbia Vitesse">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Columbia Vitesse Mid</h5>
-                          <p class="card-text text-adapt">Zapatilla de senderismo cómoda y versátil. Columbia Vitesse Mid OutDry te ofrecerá una respuesta de calidad en tus distintas rutas.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Columbia Vitesse Mid</h5>
+                            <p class="card-text text-adapt">Zapatilla de senderismo cómoda y versátil. Columbia Vitesse Mid OutDry te ofrecerá una respuesta de calidad en tus distintas rutas.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front">
                         <img src="../../img/columbia-hatana.jpg" class="card-img-top img-content" alt="Calzado trekking impermeable" title="Columbia Hatana">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Columbia Hatana Max</h5>
-                          <p class="card-text text-adapt">La utilidad de senderismo, correr o scrambling para las diversas aventuras al aire libre que te esperan.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Columbia Hatana Max</h5>
+                            <p class="card-text text-adapt">La utilidad de senderismo, correr o scrambling para las diversas aventuras al aire libre que te esperan.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front" >
                         <img src="../../img/columbia-flow-borough.jpg" class="card-img-top img-content" alt="Calzado trekking impermeable" title="columbia Flow">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Columbia Flow Borough</h5>
-                          <p class="card-text text-adapt">Con esta zapatilla no notarás los cambios en el terreno, ya que ha sido diseñada para ser funcional sin perder el estilo.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Columbia Flow Borough</h5>
+                            <p class="card-text text-adapt">Con esta zapatilla no notarás los cambios en el terreno, ya que ha sido diseñada para ser funcional sin perder el estilo.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                 </div>
@@ -197,33 +225,33 @@
                     <div data-aos="fade-up" class="card card-front">
                         <img src="../../img/timberland-euro-hiker-reimagined.jpg" class="card-img-top img-content" alt="Calzado trekking impermeable" title="Timberland euro hikker">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Timberland Euro Hiker</h5>
-                          <p class="card-text text-adapt">Botas impermeables diseñadas para brindar comodidad y estabilidad. Cuenta con plantilla acolchada de espuma y suela de alta tracción.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Timberland Euro Hiker</h5>
+                            <p class="card-text text-adapt">Botas impermeables diseñadas para brindar comodidad y estabilidad. Cuenta con plantilla acolchada de espuma y suela de alta tracción.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front">
                         <img src="../../img/timberland-2.jpg" class="card-img-top img-content" alt="Calzado trekking impermeable" title="Timberland Peek GT">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Timberland Lincoln Peek GS</h5>
-                          <p class="card-text text-adapt">Diseñadas para ir a la naturaleza y respetarla, están totalmente impermeabilizadas con una membrana Gore-Tex.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Timberland Lincoln Peek GS</h5>
+                            <p class="card-text text-adapt">Diseñadas para ir a la naturaleza y respetarla, están totalmente impermeabilizadas con una membrana Gore-Tex.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="card card-front">
                         <img src="../../img/timberland-lincoln-peek1.jpg" class="card-img-top img-content" alt="Calzado trekking impermeable" title="Timberland Peek WP">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Timberland Lincoln Peek</h5>
-                          <p class="card-text text-adapt">Cuentan con una punta reforzada y una pieza en el talón que ofrecen una mayor durabilidad, además contar con materiales impermeables.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Timberland Lincoln Peek</h5>
+                            <p class="card-text text-adapt">Cuentan con una punta reforzada y una pieza en el talón que ofrecen una mayor durabilidad, además contar con materiales impermeables.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
-                    <div data-aos="fade-up" class="card card-front" >
+                    <div data-aos="fade-up" class="card card-front">
                         <img src="../../img/timberland-verde-A10z.jpg" class="card-img-top img-content" alt="Botines casuales" title="Timberland Radford Verde">
                         <div class="card-body">
-                          <h5 class="card-title title-adapt">Timberland Radford 6</h5>
-                          <p class="card-text text-adapt">Botas casuales hechas de tela ReBOTL, la suela de Gripstick hará tu caminar más placentero y ligero.</p>
-                          <a href="#" class="btn btn-outline-primary btn-adapt">Ver Detalle</a>
+                            <h5 class="card-title title-adapt">Timberland Radford 6</h5>
+                            <p class="card-text text-adapt">Botas casuales hechas de tela ReBOTL, la suela de Gripstick hará tu caminar más placentero y ligero.</p>
+                            <a href="#" class="btn btn-outline-primary btn-adapt">Agregar Producto</a>
                         </div>
                     </div>
                 </div>
@@ -278,5 +306,6 @@
       });
     </script>
 
+    <script src="../../src/carrito.js"></script>
 </body>
 </html>
